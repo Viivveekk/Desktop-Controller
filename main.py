@@ -177,7 +177,7 @@ def open_controller():
     global open_controller_button
 
     if subprocess_instance is None:
-        subprocess_instance = subprocess.Popen(["python", "Gesture_Controller.py"])
+        subprocess_instance = subprocess.Popen(["python", "Virtual_Controller.py"])
         create_stop_window()
         open_controller_button.config(state=tk.DISABLED)
         stop_window.deiconify()
@@ -188,7 +188,7 @@ def open_mobile():
     global mobile_button
 
     if subprocess_instance is None:
-        subprocess_instance = subprocess.Popen(["python", "RemoteTouchpad.py"])
+        subprocess_instance = subprocess.Popen(["python", "MobileTouchpad.py"])
         
         mobile_stop_window()  # Create the stop window
         stop_window.deiconify()  # Show the stop window
