@@ -109,7 +109,7 @@ def hide_window():
     root.withdraw()
     image=Image.open(resource_path('static/icons/favicon.ico'))
     menu=pystray.Menu(Item('Open', open_action, default=True), Item('Quit', quit_action))
-    icon=pystray.Icon('RemoteTouchPad', image, 'RemoteTouchPad', menu, on_click=open_action)
+    icon=pystray.Icon('MobileTouchPad', image, 'logo512', menu, on_click=open_action)
     icon.run()
 
 def disconnect():
@@ -122,7 +122,7 @@ if __name__ == '__main__':
     # Tkinter setup
     root = tk.Tk()
     root.iconbitmap(resource_path('static/icons/favicon.ico'))
-    root.title('RemoteTouchPad Server')
+    root.title('MobileTouchPad Server')
     root.geometry('400x400')  # Set the window size
 
     # Add labels for server address and QR code
