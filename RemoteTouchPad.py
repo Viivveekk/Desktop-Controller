@@ -123,7 +123,7 @@ if __name__ == '__main__':
     root = tk.Tk()
     root.iconbitmap(resource_path('static/icons/favicon.ico'))
     root.title('RemoteTouchPad Server')
-    root.geometry('350x400')  # Set the window size
+    root.geometry('400x400')  # Set the window size
 
     # Add labels for server address and QR code
     local_ip = get_local_ip()

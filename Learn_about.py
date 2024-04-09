@@ -51,7 +51,7 @@ class VideoPlayerApp:
             ("  Left Click", "demo_media/leftclick.mp4", 1270, 608, "  Left Click\n  Lower the index finger and raise the middle finger."),
             ("  Right Click", "demo_media/rightclick.mp4", 1270, 608, "  Right Click\n  Lower the middle finger and raise the index finger."),
             ("  Double Click", "demo_media/doubleclick.mp4", 1270, 608, "  Double Click\n  Join both index finger and middle finger then double click action perform."),
-            ("  Scrolling", "demo_media/scrolling.mp4", 1270, 608, "  Scrolling\n  In the left hand, make a pinch of the index finger and thumb and raise all the rest of the fingers and \n  then move your hand vertically."),
+            ("  Scrolling", "demo_media/scrolling.mp4", 1270, 608, "  Scrolling\n  In the left hand, make a pinch of the index finger and thumb and raise all the rest of the fingers and \n  then move your hand vertically and horizontally."),
             ("  Multiple Item Selection", "demo_media/multipleselection.mp4", 1270, 608, "  Multiple Item Selection\n  Select multiple items with ease."),
             ("  Volume Control", "demo_media/volumecontrol.mp4", 1270, 608, "  Volume Control\n  In the right hand, make a pinch of the index finger and thumb and raise all the rest of the fingers and \n  move your hand vertically."),
             ("  Brightness Control", "demo_media/brightnesscontrol.mp4", 1270, 608, "  Brightness Control\n  In the right hand, make a pinch of the index finger and thumb and raise all the rest of the fingers and \n  move your hand horizontally."),
