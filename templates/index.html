@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="manifest" href="/static/manifest.json">
+  <link rel="icon" href="/static/icons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/icons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/statc/icons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/statc/icons/apple-touch-icon-120x120.png">
+
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body id="root">
+  <button id="settings-button">
+      <i class="fas fa-cog"></i>
+  </button>
+  
+  <div id="settings-panel" hidden>
+      <label for="emit-timer-input">Emit Timer: <span id="emit-timer-value"></span></label>
+      <input id="emit-timer-input" type="range" min="5" max="50" step="5">
+
+      <label for="mouse-speed-input">Mouse Speed: <span id="mouse-speed-value"></span></label>
+      <input id="mouse-speed-input" type="range" min="0.1" max="2" step="0.1">
+
+      <label for="click-time-threshold-input">Click Time Threshold: <span id="click-time-threshold-value"></span></label>
+      <input id="click-time-threshold-input" type="range" min="10" max="400" step="10">
+
+      <label for="click-dist-threshold-input">Click Distance Threshold: <span id="click-dist-threshold-value"></span></label>
+      <input id="click-dist-threshold-input" type="range" min="1" max="40" step="1">
+
+      <label for="scroll-threshold-input">Scroll Threshold: <span id="scroll-threshold-value"></span><span>%</span></label>
+      <input id="scroll-threshold-input" type="range" min="0" max="100" step="1">
+
+      <label for="scroll-speed-input">Scroll Speed: <span id="scroll-speed-value"></span></label>
+      <input id="scroll-speed-input" type="range" min="0.1" max="2" step="0.1">
+
+      <button id="reset-settings-button">
+        <i class="fas fa-undo"></i>
+      </button>
+      <button id="toggle-darkmode-button">
+        <i class="fa-solid fa-moon" id="fa-moon"></i>
+        <i class="fa-solid fa-sun" id="fa-sun"></i>
+      </button>
+      <button id="toggle-left-handed-button">
+        <i id="toggle-left-handed-icon" class="fa-solid fa-hand"></i>
+      </button>
+  </div>
+
+
+  <div id="trackpad"></div>
+  <script src="https://cdn.socket.io/4.6.0/socket.io.min.js" integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+" crossorigin="anonymous"></script>
+  <script type="module" src="/static/settings.js"></script>
+  <script type="module" src="/static/trackpad.js"></script>
+ 
+</body>
+</html>

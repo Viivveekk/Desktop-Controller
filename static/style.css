@@ -1,0 +1,129 @@
+/* General styles */
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Trackpad styles */
+#trackpad {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Settings button styles */
+#settings-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 10vmin;
+    z-index: 2;
+    transition: transform 0.5s ease;
+}
+
+/* Settings button rotate styles */
+#settings-button.rotate {
+    transform: rotate(90deg);
+}
+
+
+/* Remove focus outline from settings button */
+#settings-button:focus {
+    outline: none;
+}
+
+/* Settings panel styles */
+#settings-panel {
+    position: absolute;
+    top: 13vmin;
+    left: 0;
+    background-color: rgba(255,255,255,1);
+    padding: 20px;
+    font-size: 6vmin;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+/* Show settings panel */
+#settings-panel.show {
+    display: block;
+}
+
+/* Settings panel label styles */
+#settings-panel label {
+    display: block;
+    margin-bottom: 10px;
+    z-index: 2;
+}
+
+/* Settings panel input range styles */
+#settings-panel input[type="range"] {
+    transform: scale(4);
+    transform-origin: 0 0;
+    display: block;
+    margin-top: 2vmin;
+    margin-bottom: 70px;
+    width: 25%;
+    z-index: 2;
+}
+
+
+/* Reset button styles */
+#reset-settings-button,
+#toggle-darkmode-button,
+#toggle-left-handed-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 8vmin;
+}
+
+#toggle-left-handed-icon {
+    transform: rotate(15deg);
+}
+
+/* Remove focus outline from reset button */
+#reset-settings-button:focus {
+    outline: none;
+}
+
+/* Dark mode icon colors */
+#fa-moon {
+    color: #222222;
+    display: block;
+}
+
+#fa-sun {
+    color: #ebebeb;
+    display: none;
+}
+
+.dark-mode #settings-panel {
+    background-color: rgba(33,33,33,1);
+    color: white;
+}
+
+.dark-mode #settings-panel input[type="range"] {
+    background-color: #444444;
+}
+
+.dark-mode #reset-settings-button,
+.dark-mode #settings-button,
+.dark-mode #toggle-darkmode-button,
+.dark-mode #toggle-left-handed-button {
+    color: white;
+}
+
+.dark-mode #fa-moon {
+    display: none;
+}
+
+.dark-mode #fa-sun {
+    display: block;
+}

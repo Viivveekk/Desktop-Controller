@@ -1,0 +1,111 @@
+Metadata-Version: 2.1
+Name: screen_brightness_control
+Version: 0.22.2
+Summary: A Python tool for controlling the brightness of your monitor
+Author-email: Crozzers <captaincrozzers@gmail.com>
+License: MIT
+Project-URL: Source, https://github.com/Crozzers/screen_brightness_control
+Project-URL: Documentation, https://crozzers.github.io/screen_brightness_control
+Project-URL: Issues, https://github.com/Crozzers/screen_brightness_control/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: wmi ; platform_system == "Windows"
+Requires-Dist: pywin32 ; platform_system == "Windows"
+Requires-Dist: pypiwin32 ; platform_system == "Windows"
+Provides-Extra: all
+Requires-Dist: screen-brightness-control[dev,dist,docs] ; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-mock ; extra == 'dev'
+Requires-Dist: pytest-subtests ; extra == 'dev'
+Requires-Dist: types-pywin32 ; (platform_system == "Windows") and extra == 'dev'
+Provides-Extra: dist
+Requires-Dist: build ; extra == 'dist'
+Requires-Dist: setuptools ; extra == 'dist'
+Requires-Dist: wheel ; extra == 'dist'
+Requires-Dist: twine ; extra == 'dist'
+Provides-Extra: docs
+Requires-Dist: jsmin ; extra == 'docs'
+Requires-Dist: packaging ; extra == 'docs'
+Requires-Dist: pdoc >=14.1.0 ; extra == 'docs'
+
+# screen_brightness_control
+A Python tool for controlling the brightness of your monitor. Supports Windows and most flavours of Linux.
+
+# Installation
+#### Pip:
+`pip install screen-brightness-control`
+
+#### GitHub:
+```
+git clone https://github.com/Crozzers/screen_brightness_control
+cd screen_brightness_control
+pip install .
+```
+
+#### Linux:
+Installing on Linux usually requires some extra work after installing the module.
+Please see the [installing on Linux](https://crozzers.github.io/screen_brightness_control/extras/Installing%20On%20Linux.html) documentation for more details.
+
+
+# Usage
+
+### API
+
+```python
+import screen_brightness_control as sbc
+
+# get the brightness
+brightness = sbc.get_brightness()
+# get the brightness for the primary monitor
+primary = sbc.get_brightness(display=0)
+
+# set the brightness to 100%
+sbc.set_brightness(100)
+# set the brightness to 100% for the primary monitor
+sbc.get_brightness(100, display=0)
+
+# show the current brightness for each detected monitor
+for monitor in sbc.list_monitors():
+    print(monitor, ':', sbc.get_brightness(display=monitor), '%')
+```
+
+Check out the [quick start guide](https://crozzers.github.io/screen_brightness_control/extras/Quick%20Start%20Guide.html) for more details on each of these functions.
+
+Full documentation for the project is also available [here](https://crozzers.github.io/screen_brightness_control).
+
+### Command Line
+
+```
+python -m screen_brightness_control --help
+> usage: screen_brightness_control [-h] [-d DISPLAY] [-s VALUE] [-g] [-f VALUE] [-v]
+>
+> optional arguments:
+>   -h, --help                         show this help message and exit
+>   -d DISPLAY, --display DISPLAY      the display to be used
+>   -s VALUE, --set VALUE              set the brightness to this value
+>   -g, --get                          get the current screen brightness
+>   -f VALUE, --fade VALUE             fade the brightness to this value
+>   -m METHOD, --method METHOD         specify which method to use
+>   -l, --list                         list all monitors
+>   -v, --verbose                      some messages will be more detailed
+>   -V, --version                      print the current version
+```
+### Contributing
+Contributions are welcome. Issues, ideas and pull requests are all appreciated. For more information [see here](https://github.com/Crozzers/screen_brightness_control/blob/main/CONTRIBUTING.md)
+
+# See Also
+* [API Documentation](https://crozzers.github.io/screen_brightness_control)
+    * [FAQ](https://crozzers.github.io/screen_brightness_control/extras/FAQ.html)
+    * [Quick Start Guide](https://crozzers.github.io/screen_brightness_control/extras/Quick%20Start%20Guide.html)
+* [GitHub page](https://github.com/Crozzers/screen_brightness_control)
+* [PyPI page](https://pypi.org/project/screen-brightness-control/)
