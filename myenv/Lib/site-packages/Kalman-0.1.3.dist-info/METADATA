@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: Kalman
+Version: 0.1.3
+Summary: Kalman Filters
+Home-page: http://github.com/MBALearnsToCode/KalmanPy
+Author: Vinh Luong (a.k.a. MBALearnsToCode)
+Author-email: MBALearnsToCode@UChicago.edu
+License: MIT License
+Keywords: kalman filter
+Platform: UNKNOWN
+Requires-Dist: NumPy
+
+(please read README.md on GitHub repo)
+
+

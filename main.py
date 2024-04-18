@@ -30,7 +30,7 @@ def takeCommand():
         r.adjust_for_ambient_noise(source, duration=0.1)
 
         try:
-            audio = r.listen(source, timeout=5.0)
+            audio = r.listen(source, timeout=8.0)
             print('Recognizing..')
             text = r.recognize_google(audio, language='en-in')
             print(f'User said: {text}\n')
@@ -110,7 +110,7 @@ def mobile_stop_window():
     global stop_window
     stop_window = tk.Toplevel()
     stop_window.title("Stop Controller")
-    stop_window.geometry("40x40")  # Set the size of the window
+    stop_window.geometry("50x80")  # Set the size of the window
     stop_window.config(bg="white")  # Set background color of the window to white
     stop_window.overrideredirect(True)  # Remove window decorations
     stop_window.attributes('-alpha', 0.8)  # Set transparency level of the window (optional)
@@ -118,9 +118,20 @@ def mobile_stop_window():
     stop_window.withdraw()
 
     stopm_img = tk.PhotoImage(file=os.path.join(base_path,"./images/stopm.png"))
-    stop_button = tk.Button(stop_window, image=stopm_img, borderwidth=0, highlightthickness=0, bg="white", activebackground="white", command=stop_subprocess)
+    mic_img= tk.PhotoImage(file=os.path.join(base_path,"./images/mic.png"))
+
+    button_frame = tk.Frame(stop_window, bg="white")
+    button_frame.pack(fill=tk.BOTH, expand=True)
+
+    stop_button = tk.Button(button_frame, image=stopm_img, borderwidth=0, highlightthickness=0, bg="white", activebackground="white", command=stop_subprocess)
     stop_button.stop_img = stopm_img
     stop_button.pack(pady=4)
+
+    global mic_button  # Declare mic_button as global
+    
+    mic_button = tk.Button(button_frame,image=mic_img, borderwidth=0, highlightthickness=0, bg="white", activebackground="white", command=on_mic_click)
+    mic_button.stop_img = mic_img
+    mic_button.pack(fill=tk.X, pady=5)
     stop_window.attributes('-topmost', 'true')
     stop_window.protocol("WM_DELETE_WINDOW", lambda: stop_subprocess())
 
