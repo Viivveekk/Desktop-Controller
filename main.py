@@ -12,6 +12,7 @@ import requests
 from MobileTouchPad import get_local_ip
 import signal
 import psutil
+import threading
 
 # Define global variables
 subprocess_instance = None
@@ -182,17 +183,46 @@ def on_stop_window_close():
     stop_subprocess()
     welcome_window.destroy()
 
+
+def monitor_terminal_output():
+    # This function will run in a separate thread to monitor the terminal output
+    import subprocess
+    
+    process = subprocess.Popen(["python", "Virtual_Controller.py"], stdout=subprocess.PIPE, stderr=subprocess.STDOUT, universal_newlines=True)
+    while True:
+        output_line = process.stdout.readline()
+        if "INFO: Created TensorFlow Lite XNNPACK delegate for CPU" in output_line:
+            # Close the popup when the desired message is found
+            popup.destroy()
+            break
+
 def open_controller():
     global subprocess_instance
     global stop_window
     global open_controller_button
+    global popup
 
     if subprocess_instance is None:
         subprocess_instance = subprocess.Popen(["python", "Virtual_Controller.py"])
+        threading.Thread(target=monitor_terminal_output).start()
         create_stop_window()
         open_controller_button.config(state=tk.DISABLED)
         stop_window.deiconify()
         minimize_window()
+        
+        # Display a popup message indicating that the controller is starting
+        popup = tk.Toplevel(welcome_window)
+        popup.overrideredirect(True)
+        popup_width = 330
+        popup_height = 80
+        screen_width = welcome_window.winfo_screenwidth()
+        screen_height = welcome_window.winfo_screenheight()
+        x = (screen_width - popup_width) // 2
+        y = (screen_height - popup_height) // 2
+        popup.geometry(f"{popup_width}x{popup_height}+{x}+{y}")
+        popup.configure(bg='#101010')
+        label = tk.Label(popup, text="Controller is Starting..Please Wait!", font=("Helvetica", 12),fg='#00FF00', bg='#101010')
+        label.pack(pady=20)
 
 def open_mobile():
     global subprocess_instance
