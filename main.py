@@ -151,7 +151,7 @@ def stop_subprocess():
     else:
         print('Socket connection disconnected successfully')
 """
-    if subprocess_instance:
+    if subprocess_instance and subprocess_instance.poll() is None:
         # Get the subprocess PID
         pid = subprocess_instance.pid
 
@@ -174,7 +174,8 @@ def stop_subprocess():
             open_controller_button.config(state=tk.NORMAL)
         if mobile_button:
             mobile_button.config(state=tk.NORMAL)
-        welcome_window.state('normal')
+        if welcome_window:
+            welcome_window.state('normal')
 
 def minimize_window():
     welcome_window.iconify()
@@ -193,7 +194,7 @@ def monitor_terminal_output():
         output_line = process.stdout.readline()
         if "INFO: Created TensorFlow Lite XNNPACK delegate for CPU" in output_line:
             # Close the popup when the desired message is found
-            popup.destroy()
+            welcome_window.after(0, popup.destroy)
             break
 
 def open_controller():

@@ -12,8 +12,20 @@ from pystray import MenuItem as Item
 from multiprocessing import Process, freeze_support
 import os, sys
 import mimetypes
+import multiprocessing
 
 server_process = None
+try:
+    import pyautogui
+except ImportError:
+    print('Error: pyautogui module not found. Please install it to use this script.')
+    sys.exit(1)
+
+try:
+    import socket
+except ImportError:
+    print('Error: socket module not found. Please install it to use this script.')
+    sys.exit(1)
 
 def resource_path(relative_path):
     ''' Get absolute path to resource, works for dev and for PyInstaller '''
@@ -116,8 +128,14 @@ def disconnect():
     socketio.server.disconnect() 
     return 'Disconnected'
 
+def on_quit(icon):
+    icon.stop()
+
+icon = pystray.Icon('MobileTouchpad', icon='favicon.ico', menu=pystray.Menu(Item('Quit', on_quit)))
+icon.stop()
+
 if __name__ == '__main__':
-    freeze_support()
+    multiprocessing.freeze_support()
 
     # Tkinter setup
     root = tk.Tk()
@@ -163,5 +181,9 @@ if __name__ == '__main__':
     # Start the server when the Tkinter window is created
     root.after(0, start_server)
 
+
+
     # Start the application
     root.mainloop()
+    root.destroy()
+    
