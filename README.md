@@ -59,6 +59,6 @@ Please make sure to update tests as appropriate.
 
 ## <img src="images/favicon.png" alt="Logo" width="30" height="30"> License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](LICENSE)
 
 # <img src="images/favicon.png" alt="Logo" width="30" height="30">
