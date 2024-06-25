@@ -1,1 +1,3 @@
-# [PROPOSED SYSTEM](images/proposed_system.png)
+# PROPOSED SYSTEM
+
+![Alt texxt](images/proposed_system.png)
