@@ -12,7 +12,7 @@ We designed and implemented finger tracking based on a virtual mouse application
 
 **3. RAM:-** 4GB and above.
 
-**4. WEBCAM:-** An Web is necessary for input. 
+**4. WEBCAM:-** An Webcam is necessary for input. 
 
 { If webcam not available then you can use third party application like **[DroidCam](https://droidcam.en.softonic.com/)** or any other that can help you to use your mobile cam. But this DroidCam application should be installed in both android and pc devices for usage. }
 
