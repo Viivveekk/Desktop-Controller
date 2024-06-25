@@ -52,15 +52,19 @@ For better Working Create an Virtual Environment.
 ## <img src="images/favicon.png" alt="Logo" width="30" height="30"> Demonstrated Pics
 
 1. **Right Click**
+
    ![](images/rc.png)
 
 2. **Multiple Selection**
+
    ![](images/ms.png)
 
 3. **Brightness Control**
+
    ![](images/bc.png)
 
 4. **Double Click**
+
    ![](images/dc.png)
 
 
