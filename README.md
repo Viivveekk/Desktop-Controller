@@ -1,1 +1,1 @@
-(images/proposed_system.png)
+# [PROPOSED SYSTEM](images/proposed_system.png)
