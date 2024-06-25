@@ -70,7 +70,12 @@ For better Working Create an Virtual Environment.
 
 ## <img src="images/favicon.png" alt="Logo" width="30" height="30"> Additional Work In the Project
 
-Additionally, we have developed a feature to control the mouse using a mobile device's screen. When the user selects "Remote Mouse," a QR code is displayed on the screen. Scanning this code directs the user to a browser page where they can control the mouse by dragging their finger on the page. However, for this to work, both the PC and the mobile device must be on the same network.
+Additionally, we have developed a feature to control the mouse using a mobile device's screen. When the user selects "Mobile Controller," a QR code is displayed on the screen. Scanning this code directs the user to a browser page where they can control the mouse by dragging their finger on the page. However, for this to work, both the PC and the mobile device must be on the same network.
+
+<p float="left">
+  <img src="images/QR.png" alt="Image 1" width="200" />
+  <img src="images/browserpage.jpg" alt="Image 2" width="200" /> 
+</p> 
 
 ## <img src="images/favicon.png" alt="Logo" width="30" height="30"> Contributing
 
