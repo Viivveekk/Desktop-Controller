@@ -2,10 +2,10 @@
 
 We designed and implemented finger tracking based on a virtual mouse application using a regular webcam. Furthermore, we integrated a speech-to-text converter. While touchscreen technology is popular in mobile devices, it is costly for desktop systems. Therefore, we explored computer vision techniques as an alternative method to create a virtual human-computer interaction device, such as a mouse using a webcam and voice commands using a mic.
 
-## <img src="images/favicon.png" alt="Logo" width="30" height="30"> PROPOSED SYSTEM
+## <img src="images/favicon.png" alt="Logo" width="30" height="20"> PROPOSED SYSTEM
 <img src="images/proposed_system.png" width="900">
 
-## <img src="images/favicon.png" alt="Logo" width="30" height="30"> System Software & Hardware Requirements
+## <img src="images/favicon.png" alt="Logo" width="30" height="20"> System Software & Hardware Requirements
 **1. IDLE:-** Python version 3.8 and above.
 
 **2. OS:-** Windows 8 and above.
@@ -18,7 +18,7 @@ We designed and implemented finger tracking based on a virtual mouse application
 
 **4. MICROPHONE**
 
-## <img src="images/favicon.png" alt="Logo" width="30" height="30"> Installation
+## <img src="images/favicon.png" alt="Logo" width="30" height="20"> Installation
 
 For better Working Create an Virtual Environment.
 1. Navigate to Your Project Directory:
@@ -49,7 +49,7 @@ For better Working Create an Virtual Environment.
    ```bash
    python main.py
    ```
-## <img src="images/favicon.png" alt="Logo" width="30" height="30"> Demonstrated Pics
+## <img src="images/favicon.png" alt="Logo" width="30" height="20"> Demonstrated Pics
 
 1. **Right Click**
 
@@ -70,7 +70,7 @@ For better Working Create an Virtual Environment.
 **For Demo Video [Click Here](https://drive.google.com/file/d/1YZv0VA10cUBe4Hj-AIBDiDsm4ATKt6gr/view?usp=sharing)**
 
 
-## <img src="images/favicon.png" alt="Logo" width="30" height="30"> Additional Work In the Project
+## <img src="images/favicon.png" alt="Logo" width="30" height="20"> Additional Work In the Project
 
 Additionally, we have developed a feature to control the mouse using a mobile device's screen. When the user selects "Mobile Controller," a QR code is displayed on the screen. Scanning this code directs the user to a browser page where they can control the mouse by dragging their finger on the page. However, for this to work, both the PC and the mobile device must be on the same network. This only has feature of left click and cursor movement.
 
@@ -87,31 +87,31 @@ Additionally, we have developed a feature to control the mouse using a mobile de
   </tr>
 </table> 
 
-## <img src="images/favicon.png" alt="Logo" width="30" height="30"> Contributing
+## <img src="images/favicon.png" alt="Logo" width="30" height="20"> Contributing
 
 Pull requests are welcome. For major changes, please open an issue first
 to discuss what you would like to change.
 
-## COLLABORATORS
+## <img src="images/favicon.png" alt="Logo" width="30" height="20"> COLLABORATORS
 
 <table>
   <tr>
     <td align="center">
       Vivek Kalwar<br>
-      <a href="vivekkalwar95@gmail.com">vivekkalwar95@gmail.com</a>
+      <a href="mailto:vivekkalwar95@gmail.com">vivekkalwar95@gmail.com</a>
     </td>
     <td align="center">
       Prabel Pandey<br>
-      <a href="prabel397@gmail.com">prabel397@gmail.com</a>
+      <a href="mailto:prabel397@gmail.com">prabel397@gmail.com</a>
     </td>
     <td align="center">
       Nadeem Khan<br>
-      <a href="kk0078841@gmail.com">kk0078841@gmail.com</a>
+      <a href="mailto:kk0078841@gmail.com">kk0078841@gmail.com</a>
     </td>   
   </tr>
 </table>
 
 
-## <img src="images/favicon.png" alt="Logo" width="30" height="30"> License
+## <img src="images/favicon.png" alt="Logo" width="30" height="20"> License
 
 [MIT](LICENSE) Licensed 
