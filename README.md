@@ -16,7 +16,7 @@ We designed and implemented finger tracking based on a virtual mouse application
 
 { If webcam not available then you can use third party application like **[DroidCam](https://droidcam.en.softonic.com/)** or any other that can help you to use your mobile cam. But this DroidCam application should be installed in both android and pc devices for usage. }
 
-**4. MICROPHONE**
+**5. MICROPHONE**
 
 ## <img src="images/favicon.png" alt="Logo" width="30" height="20"> Installation
 
