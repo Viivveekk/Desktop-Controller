@@ -76,16 +76,19 @@ Additionally, we have developed a feature to control the mouse using a mobile de
 
 <table>
   <tr>
-    <td align="center">
-      <img src="images/QR.png" alt="Person 1" width="700" height="600"><br>
+    <td align="center" colspan="2">
+      <img src="images/QR.png" alt="Person 1" width="900" height="600"><br>
       <sub><b>QR Code to Scan</b></sub>
     </td>
-    <td align="center">
+  </tr>
+  <tr>
+    <td align="center" colspan="2">
       <img src="images/browserpage.jpg" alt="Person 2" width="400" height="600"><br>
       <sub><b>Mobile Browser Page</b></sub>
     </td>
   </tr>
-</table> 
+</table>
+
 
 ## <img src="images/favicon.png" alt="Logo" width="30" height="20"> Contributing
 
