@@ -97,22 +97,29 @@ to discuss what you would like to change.
 
 ## <img src="images/favicon.png" alt="Logo" width="30" height="20"> COLLABORATORS
 
-<table>
+<table border="1">
   <tr>
-    <td align="center">
-      Vivek Kalwar<br>
-      <a href="mailto:vivekkalwar95@gmail.com">vivekkalwar95@gmail.com</a>
-    </td>
-    <td align="center">
-      Prabel Pandey<br>
-      <a href="mailto:prabel397@gmail.com">prabel397@gmail.com</a>
-    </td>
-    <td align="center">
-      Nadeem Khan<br>
-      <a href="mailto:kk0078841@gmail.com">kk0078841@gmail.com</a>
-    </td>   
+    <th align="center">Name</th>
+    <th align="center">Email</th>
+    <th align="center">Git ID</th>
+  </tr>
+  <tr>
+    <td align="center">Vivek Kalwar</td>
+    <td align="center"><a href="mailto:vivekkalwar95@gmail.com">vivekkalwar95@gmail.com</a></td>
+    <td align="center"><a href="https://github.com/Viivveekk">Viivveekk</a></td>
+  </tr>
+  <tr>
+    <td align="center">Prabel Pandey</td>
+    <td align="center"><a href="mailto:prabel397@gmail.com">prabel397@gmail.com</a></td>
+    <td align="center"><a href="https://github.com/HiPrabel">HiPrabel</a></td>
+  </tr>
+  <tr>
+    <td align="center">Nadeem Khan</td>
+    <td align="center"><a href="mailto:kk0078841@gmail.com">kk0078841@gmail.com</a></td>
+    <td align="center"><a href="https://github.com/Luciferkhan007">Luciferkhan007</a></td>
   </tr>
 </table>
+
 
 
 ## <img src="images/favicon.png" alt="Logo" width="30" height="20"> License
