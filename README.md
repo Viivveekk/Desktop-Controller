@@ -1,3 +1,5 @@
+![Visitor Count](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/Viivveekk/Desktop-Controller&count_bg=%2379C83D&title_bg=%23555555&icon=github.svg&icon_color=%23E7E7E7&title=visitors&edge_flat=false)
+
 # <img src="images/favicon.png" alt="Logo" width="30" height="30"> DESKTOP CONTROLLER
 
 We designed and implemented finger tracking based on a virtual mouse application using a regular webcam. Furthermore, we integrated a speech-to-text converter. While touchscreen technology is popular in mobile devices, it is costly for desktop systems. Therefore, we explored computer vision techniques as an alternative method to create a virtual human-computer interaction device, such as a mouse using a webcam and voice commands using a mic.
@@ -125,7 +127,3 @@ to discuss what you would like to change.
 ## <img src="images/favicon.png" alt="Logo" width="30" height="20"> License
 
 [MIT](LICENSE) Licensed 
-
-https://github.com/Viivveekk/Desktop-Controller
-
-![Visitor Count](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/Viivveekk/Desktop-Controller&count_bg=%2379C83D&title_bg=%23555555&icon=github.svg&icon_color=%23E7E7E7&title=visitors&edge_flat=false)
