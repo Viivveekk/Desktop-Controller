@@ -125,3 +125,7 @@ to discuss what you would like to change.
 ## <img src="images/favicon.png" alt="Logo" width="30" height="20"> License
 
 [MIT](LICENSE) Licensed 
+
+https://github.com/Viivveekk/Desktop-Controller
+
+![Visitor Count](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/Viivveekk/Desktop-Controller&count_bg=%2379C83D&title_bg=%23555555&icon=github.svg&icon_color=%23E7E7E7&title=visitors&edge_flat=false)
