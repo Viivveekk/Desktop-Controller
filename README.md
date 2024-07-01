@@ -1,4 +1,4 @@
-![Visitor Count](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/Viivveekk/Desktop-Controller&count_bg=%2379C83D&title_bg=%23555555&icon=github.svg&icon_color=%23E7E7E7&title=visitors&edge_flat=false)
+<a href="https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2FViivveekk%2FDesktop-Controller"><img src="https://api.visitorbadge.io/api/daily?path=https%3A%2F%2Fgithub.com%2FViivveekk%2FDesktop-Controller&labelColor=%232ccce4&countColor=%23263759&labelStyle=upper" /></a>
 
 # <img src="images/favicon.png" alt="Logo" width="30" height="30"> DESKTOP CONTROLLER
 
