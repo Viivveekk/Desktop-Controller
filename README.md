@@ -1,4 +1,4 @@
-<a href="https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2FViivveekk%2FDesktop-Controller"><img src="https://api.visitorbadge.io/api/daily?path=https%3A%2F%2Fgithub.com%2FViivveekk%2FDesktop-Controller&labelColor=%232ccce4&countColor=%23263759&labelStyle=upper" /></a>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=viivveekk&label=Profile%20views&color=0e75b6&style=flat" alt="viivveekk/Desktop-Controller" /> </p>
 
 # <img src="images/favicon.png" alt="Logo" width="30" height="30"> DESKTOP CONTROLLER
 
