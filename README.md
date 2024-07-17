@@ -1,4 +1,3 @@
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=viivveekk&label=Profile%20views&color=0e75b6&style=flat" alt="viivveekk/Desktop-Controller" /> </p>
 
 # <img src="images/favicon.png" alt="Logo" width="30" height="30"> DESKTOP CONTROLLER
 
