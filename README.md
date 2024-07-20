@@ -131,4 +131,4 @@ to discuss what you would like to change.
 
 ## <img src="images/favicon.png" alt="Logo" width="30" height="20"> Your Support 
 
-<a href="https://buymeacoffee.com/vivekk99"><img title="Buy us Coffee" src="https://img.shields.io/badge/Donate-Desktop_Controller  x-blue?style=for-the-badge&logo=github"></a>
+<a href="https://buymeacoffee.com/vivekk99"><img title="Buy us Coffee" src="https://img.shields.io/badge/Donate-BUY US COFFEE  x-blue?style=for-the-badge&logo=github"></a>
