@@ -128,3 +128,6 @@ to discuss what you would like to change.
 ## <img src="images/favicon.png" alt="Logo" width="30" height="20"> License
 
 [MIT](LICENSE) Licensed 
+
+**If you want to donate, click on the button**
+<a href="https://buymeacoffee.com/vivekk99"><img title="Donate" src="https://img.shields.io/badge/Donate-osint X-yellow?style=for-the-badge&logo=github"></a>
