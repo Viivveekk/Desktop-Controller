@@ -129,5 +129,5 @@ to discuss what you would like to change.
 
 [MIT](LICENSE) Licensed 
 
-**If you want to donate, click on the button**
-<a href="https://buymeacoffee.com/vivekk99"><img title="Donate" src="https://img.shields.io/badge/Donate-osint X-yellow?style=for-the-badge&logo=github"></a>
+**If you want to donate us for our efforts, click on the button**
+<a href="https://buymeacoffee.com/vivekk99"><img title="Donate" src="https://img.shields.io/badge/Donate-Desktop_Controller  x-blue?style=for-the-badge&logo=github"></a>
