@@ -19,6 +19,12 @@ We designed and implemented finger tracking based on a virtual mouse application
 
 { If webcam not available then you can use third party application like **[DroidCam](https://droidcam.en.softonic.com/)** or any other that can help you to use your mobile cam. But this DroidCam application should be installed in both android and pc devices for usage. }
 
+{ If any Python library is not installing due to **errors**, particularly if the error is related to **permissions or the location of the library**, try the following steps:
+
+**Open Command Prompt as Administrator:** Right-click on the Command Prompt icon and select ‘Run as Administrator’.
+
+**Install the Library:** Use the command pip install <library-name> to install the problematic library. }
+
 **5. MICROPHONE**
 
 ## <img src="images/favicon.png" alt="Logo" width="30" height="20"> Installation
