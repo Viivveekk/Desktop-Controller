@@ -52,6 +52,12 @@ The mathematical concepts used to designed for a gesture-based desktop control s
      ```
      In this case, `dist1` represents the distance from the fingertip to the middle knuckle, and `dist2` is the distance from the middle knuckle to the base knuckle. A ratio greater than 0.5 typically indicates an open finger.
 
+     Code:-
+
+     ```
+     ratio = round(dist / dist2, 1)
+     ```
+
 2. **Pinch Gesture Control:**
    - **Quantified Displacement:**
      For pinch gestures, the displacement magnitude is used to adjust system settings such as volume and brightness:
@@ -59,6 +65,12 @@ The mathematical concepts used to designed for a gesture-based desktop control s
      pinch_lv = current_position - start_position
      ```
      `current_position` is the hand's current position, while `start_position` is the position where the pinch gesture began. This displacement is quantified for control applications.
+
+     Code:-
+
+     ```
+     pinchlv = round((hand_result.landmark[8].x - Controller.pinchstartxcoord) * 10, 1)
+     ```
 
 3. **Cursor Movement Stabilization:**
    - **Damping Adjustment:**
@@ -72,6 +84,20 @@ The mathematical concepts used to designed for a gesture-based desktop control s
      ratio = 2.1 for larger distances
      ```
 
+     Code:-
+
+     ```
+     distsq = delta_x**2 + delta_y**2
+     ratio = 1
+     if distsq <= 25:
+       ratio = 0
+     elif distsq <= 900:
+       ratio = 0.07 * (distsq ** (1/2))
+     else:
+       ratio = 2.1
+     x, y = x_old + delta_x * ratio, y_old + delta_y * ratio
+     ```
+
 4. **Pinch Gesture Levels:**
    - **Vertical and Horizontal Levels:**
      To assess the level of pinch gestures along different axes:
@@ -79,11 +105,23 @@ The mathematical concepts used to designed for a gesture-based desktop control s
        ```
        pinch_ylv = pinchstart_y - current_y
        ```
+       Code:-
+
+       ```
+       dist = round((Controller.pinchstartycoord - hand_result.landmark[8].y) * 10, 1)
+       ```
+          
      - Horizontal Pinch Level:
        ```
        pinch_xlv = current_x - pinchstart_x
        ```
      `pinchstart_x` and `pinchstart_y` are the coordinates at the start of the pinch gesture, and `current_x` and `current_y` are the current hand coordinates.
+
+       Code:-
+
+       ```
+       dist = round((hand_result.landmark[8].x - Controller.pinchstartxcoord) * 10, 1)
+       ```
 
 These mathematical concepts and formulas enable the accurate detection and interpretation of hand gestures, allowing users to control various system functions through gestures effectively.
 
