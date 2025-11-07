@@ -1,5 +1,4 @@
-### Visitors :
-![Visitor Count](https://profile-counter.glitch.me/Viivveekk/count.svg)
+<img src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FViivveekk%2FDesktop-Controller&label=visitors&countColor=%23263759&style=flat" alt="Visitor Badge" width="150"/>
 
 # <img src="images/favicon.png" alt="Logo" width="30" height="30"> DESKTOP CONTROLLER
 
